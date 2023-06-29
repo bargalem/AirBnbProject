@@ -1,0 +1,15 @@
+
+    .logindiv{
+     
+      height: fit-content;
+      padding: 20px; 
+    width:40vw; 
+    background-image: linear-gradient(rgb(148, 148, 250),rgb(136, 221, 245));
+    margin:auto;
+    border-radius: 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+ 

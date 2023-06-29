@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Request Book</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main {
+    padding: 15px;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    position: sticky;
+    border-bottom: 1px solid #dad9d9;
+    margin: auto;
+  }
+
+  #rightsidediv h1 {
+    margin: 40px;
+  }
+
+  #rightsidediv h1 a {
+
+    color: black;
+    text-decoration: none;
+  }
+
+  #mainDiv {
+    display: flex;
+    width: 100vw;
+    gap: 20px;
+  }
+
+  .divDate,
+  .divDate1 {
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .divGest {
+    display: flex;
+    width: 50vw;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  #rfistDiv {
+    margin-left: 40px;
+    border-bottom: 1px solid rgb(201, 199, 199);
+    padding: 20px;
+  }
+
+  #rsecondDiv {
+    margin-left: 40px;
+    padding: 20px;
+  }
+
+  .divGest2,
+  .divDate1 {
+    border: 1px solid rgb(189, 184, 184);
+    padding: 8px;
+    border-radius: 10px;
+
+  }
+
+  .form-select {
+    border: none;
+
+  }
+
+  #leftsidediv {
+    border: 1px solid rgb(214, 211, 211);
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 10%;
+    padding: 5px;
+
+  }
+
+  .img {
+    display: flex;
+    padding: 20px;
+  }
+
+  .card img {
+    border-radius: 10px;
+    outline-style: none;
+  }
+
+  .imgdiv2 {
+
+    border-top: 1px solid rgb(214, 211, 211);
+
+    border-bottom: 1px solid rgb(214, 211, 211);
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  #taxdiv,
+  #Total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #Total {
+    margin: 20px;
+  }
+
+  @media (max-width:768px) {
+
+    #mainDiv {
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      padding: auto;
+      align-items: center;
+
+    }
+
+    #rightsidediv {
+      margin-left: auto;
+      padding: auto;
+    }
+
+  }
+</style>
+
+<body>
+  <!--1 navbar-->
+  <nav class="navbar navbar-light  main">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../hotel image/logo.png" alt="" width="30" height="24">
+      </a>
+
+    </div>
+  </nav>
+
+  <div id="mainDiv">
+    <div id="rightsidediv"><!--right side -->
+      <h1><a href="./card1.html"><i class="bi bi-chevron-compact-left">Request to book
+          </i></a></h1>
+      <div id="rfistDiv">
+        <h3>Your Hotel</h3>
+        <div class="divDate">
+          <h5><span id="getdate1">Dates</span>-
+            <span id="getdate2">Dates</span>
+          </h5>
+          <div class="selectdiv">
+
+            <input type="date">
+
+          </div>
+        </div>
+        <div class="divGest">
+          <h5 id="Gest"></h5>
+          <div class="selectdiv">
+            <select class="form-select" aria-label="Disabled select example">
+              <option value="1"></option>
+              <option value="2">Childrens 1</option>
+              <option value="3">Childrens 2</option>
+              <option value="4">Adult 1</option>
+              <option value="5">Adult 2</option>
+              <option value="6">Pet1</option>
+              <option value="7">Pet2</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="rsecondDiv">
+        <h3>Log in to book</h3>
+        <div class="divDate1">
+
+
+          <div class="selectdiv">
+            <select class="form-select" aria-label="Disabled select example">
+              <option selected>INDIA(+91)</option>
+              <option value="1">INDIA(+91)</option>
+              <option value="2">Kolkata(+91)</option>
+              <option value="3">Kolhapur(+91)</option>
+              <option value="4">Sangli(+91)</option>
+              <option value="5">Karad(+91)</option>
+              <option value="6">Satara(+91)</option>
+            </select>
+          </div>
+        </div>
+        <div class="divGest2">
+          <input type="text" placeholder="Enter phone number" style="border: none;">
+
+        </div>
+        <p> We’ll call or text you to confirm your number.
+        <div class="d-grid gap-4 col-12 mx-auto">
+
+          <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
+            data-bs-content="And here's some amazing content. It's very engaging. Right?">Continue</button>
+
+        </div>
+
+      </div>
+
+
+    </div><!--right div-->
+
+
+    
+    <div id="leftsidediv"><!--left side -->
+      <form action="/book" method="post">
+      <div class="img">
+
+        <div class="card" style="width: 10rem;">
+          <img src="./hotel image/hotel1.jpg" name="hotelimg" class="card-img-top" alt="...">
+        </div>
+        
+        <div class="card-body">
+        
+          <p class="card-text" name="hotelnm">Akshy hotel</p>
+        
+        </div>
+        
+        </div>
+        
+        <div class="imgdiv2">
+          <h5>Your Total</h5>
+          <div id="taxdiv">
+            <div class="selectdiv" id="totalday">
+        
+            </div>
+            <div class="selectdiv" id="roomprize">
+        
+            </div>
+          </div>
+          <div id="taxdiv">
+            <div class="selectdiv">
+          
+              <p> Taxes</p>
+            </div>
+            <div class="selectdiv" id="roomtax">
+              ₹1789
+            </div>
+          </div>
+          </div>
+          
+          <div id="Total">
+          <button type="button" id="bookbtn" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
+            data-bs-content="And here's some amazing content. It's very engaging. Right?">Book Now</button>
+          <div class="selectdiv" style="margin-top: 5px ;">
+          
+            <h5> Total(INR)</h5>
+          </div>
+          <div class="selectdiv" style="margin-top: 5px ;" id="totamount">
+          
+          </div>
+          
+          
+          </div>
+          </form>
+          
+          </div>
+
+
+  </div>
+  
+  <hr>
+  <Div style="text-align: center ;">
+    <h5>about us</h5>
+    <p style="font-family: Arial, Helvetica, sans-serif;">Hotel websitebooking,rooom in proper placeacorind to your
+      Requirment</p>
+  </Div>
+  <h5 style="text-align: center">@Airbnb.com</h5>
+  
+  
+  
+  
+  </body>
+  
+  </html>
+  
+  <script>
+
+    let passdate = localStorage.getItem("diffdate");
+    let passitemselect = localStorage.getItem("itemselect");
+  let passdate1 = localStorage.getItem("selectdt1")
+  let passdate2 = localStorage.getItem("selectdt2")
+
+  console.log(passdate);
+  console.log(passitemselect);
+  document.getElementById("totalday").textContent = passdate + " " + "Night";
+  document.getElementById("Gest").textContent = passitemselect;
+  document.getElementById("getdate1").textContent = passdate1;
+  document.getElementById("getdate2").textContent = passdate2;
+
+  
+ 
+  
+  let popup = () => {
+    if (passdate===null) {
+      console.log(passdate)
+      alert("Please select Date")
+    } else {
+
+      alert("booking Successly")
+      document.getElementById("totalday").textContent = ""
+      document.getElementById("Gest").textContent = ""
+      document.getElementById("getdate1").textContent = ""
+      document.getElementById("getdate2").textContent = ""
+    }
+  }
+  let bookbtn = document.getElementById("bookbtn")
+  bookbtn.addEventListener('click', popup)
+
+  function add() {
+    let total = passdate * 2000
+    document.getElementById("roomprize").innerText = "₹" + total
+  }
+  add()
+
+  function totalAmount() {
+    let tax = document.getElementById("roomtax").value
+    let totalAmount = (passdate * 2000)
+    let finalamount = totalAmount + 1789
+    document.getElementById("totamount").innerText = "₹" + finalamount
+  }
+  totalAmount()
+
+ 
+
+</script>

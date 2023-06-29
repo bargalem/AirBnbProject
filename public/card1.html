@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Airbnb project</title>
+  </head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main{
+    padding: 15px;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom:1px solid #dad9d9;
+    margin: auto;
+  }
+  
+.serch{
+  border: 1px solid #dad9d9;
+padding:10px;
+border-radius: 30px;
+box-shadow: 1px 1px 2px #dad9d9;
+
+}
+.form-control{
+  outline: none;
+  border: none;
+  height: fit-content;
+}
+
+.icon{
+  
+  border: 1px solid #dad9d9;
+  
+  padding:10px ;
+  margin-right: 10px;
+border-radius: 30px;
+box-shadow: 1px 1px 2px #dad9d9;
+}
+.icon:hover{
+  box-shadow: 2px 2px 2px #c0bfbf; 
+}
+h3,h2{
+  padding: 20px;
+  margin-left: 20px;
+  
+}
+h2 a{
+  color: black;
+  text-decoration: none;
+}
+.imgdiv{
+  margin: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.cardtxt{
+  display: flex;
+  gap: 10px;
+  padding:20px ;
+  border-bottom:1px solid rgb(202, 202, 202);
+margin: -50px;
+ margin-top: 0%;
+ height: 30%;
+
+ 
+}
+.card-body{
+ 
+  font-family:   serif;
+  font-size: small;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: fit-content;
+}
+.check{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.div2{
+  border-bottom:1px solid rgb(202, 202, 202);
+  padding:20px ;
+  margin-top: -100px;
+  
+}
+.para1{
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+.receitdiv{
+  border: 1px solid rgb(187, 186, 186);
+  border-radius: 10px;
+  padding: 20px;
+  top: 0;
+    z-index: 18;
+    background-color: white;
+    position: sticky;
+   
+  
+}
+.rupesdiv{
+  display: flex;
+  justify-content: space-evenly;
+  gap:10px;
+ 
+}
+.datediv{
+  display: flex;
+  border: 1px solid rgb(207, 205, 205);
+  margin-top: 5px;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+}
+.checkclass{
+  padding: 10px; 
+ 
+}
+.checkclass p{
+  font-family:  sans-serif;
+  font-weight: bold;
+  font-size: smaller;
+}
+.checkdiv1{
+  border-right:   1px solid rgb(163, 161, 161);
+}
+.btn{
+  margin-top: 10px;
+} 
+.selectdate{
+width:50%;
+height: 50%;
+margin-left: 20px;
+border-radius: 5px;
+
+}
+.selectdate1{
+  border-radius: 5px;
+  border: none;
+  
+}
+.selectdate:hover{
+  border-color: rgb(67, 128, 240);
+  cursor: pointer;
+}
+
+
+@media (max-width:768px)  {
+
+.check{
+max-width:100%;
+display: block;
+margin: auto;
+padding: auto;
+margin: 0px;
+
+}
+.div2{
+  margin-top: 0px;
+}
+.cardtxt{
+  display: none;
+}
+
+}
+
+
+</style>
+
+
+
+
+<body>
+  <!--1 navbar-->
+  <nav class="navbar navbar-light  main">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../hotel image/logo.png" alt="" width="30" height="24">
+      </a>
+      <nav class="navbar navbar-light  serch">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger " type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </nav>
+
+      <a class="navbar-brand" href="./login.html">
+
+        <div class="icon">
+          <i class="bi bi-list"></i>
+          
+          <img src="../hotel image/login.png" alt="awatar" width="30" height="26">
+        </div>
+      </a>
+    </div>
+  </nav>
+<br>
+<h2><a href="./index.html"><i class="bi bi-chevron-compact-left">Whispering Pines Cottages|Treehouse|Tandi  </i></a></h1>
+   
+  
+
+
+  <div class="imgdiv">
+  <div class="img">
+    <img src="./hotel image/hotel6.jpg" class="img-thumbnail" alt="...">
+  </div>
+<div class="img1">
+  <img src="./hotel image/hotel3.jpg" class="img-thumbnail" alt="...">
+  </div>
+  <div class="img1">
+    <img src="./hotel image/bed.jpg" class="img-thumbnail" alt="...">
+  </div>
+  <div class="img1">
+    <img src="./hotel image/hotel2.jpg" class="img-thumbnail" alt="...">
+  </div>
+  <div class="img1">
+    <img src="./hotel image/hotel4.jpg" class="img-thumbnail" alt="...">
+  </div>
+</div>
+
+  <h3>Room in a rental unit hosted by Sagrario<span class="badge bg-secondary"></span></h3>
+
+<div class="check">
+<div class="cardtxt">
+  <div class="card" style="width: 8rem;">
+    <div class="card-body">
+      <h4> <i class="bi bi-box2"></i></h4>
+      
+      <p class="card-text">1 double bed</p>
+      
+    </div>
+  </div>
+
+  <div class="card" style="width: 8rem;">
+    <div class="card-body">
+     
+      <h4>  <i class="bi bi-basket3-fill"></i></h4>
+      <p class="card-text">Shared bathroom</p>
+      
+    </div>
+  </div>
+
+  <div class="card" style="width: 8rem;">
+    <div class="card-body">
+     
+    <h4> <i class="bi bi-house-door"></i></h4>
+      <p class="card-text"> Other guests may be here</p>
+      
+    </div>
+    
+</div>
+
+
+
+ </div>
+
+<!--receitdiv----------------------------------->
+ 
+ <div class="receitdiv">
+ <div class="rupesdiv">
+  <div>
+<h6>₹10,790</h6>
+Total before taxes
+</div>
+ <div>
+  <i class="bi bi-star-fill"></i> 4.87 ·171 reviews
+  </div>
+  </div>
+  
+  <div class="datediv checkdiv1">
+    <div class="checkclass">
+      <p>CHECK-IN</p>
+      <input  id="sltdDate1" type="date"  >
+      
+    </div> 
+    <div class="checkclass">
+      <p>CHECK-OUT</p> 
+      <input  id="sltdDate2" type="date"  >
+      
+    </div>
+  </div>
+<form name="formid" style="margin: 5px;">
+<select name="selectGest" onchange="addguest()"class="form-select"  aria-label="Disabled select example">
+  <option>Select</option>
+  <option value="Childrens 1">Childrens 1</option>
+  <option value="Childrens 2">Childrens 2</option>
+  <option value="Adult 1">Adult 1</option>
+  <option value="Adult 2">Adult 2</option>
+  <option value="Pet1">Pet1</option>
+  <option value="Pet2">Pet2</option>
+</select>
+</form>
+<p id="setgut"style="display: none;"></p>
+<div class="d-grid gap-4 col-12 mx-auto">
+
+ <a href="./confirm.html" class="btn btn-lg btn-danger"data-bs-toggle="popover">  
+   <button onclick=selectd() id="btn" type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
+    data-bs-content="And here's some amazing content. It's very engaging. Right?">Check avalibality</button>
+  </a> 
+  
+   <!-- <button onclick="selectd()">click</button> -->
+</div>
+</div>
+
+</div>
+
+  </div><!--check-->
+
+
+  <div class="div2">
+    <div class="para1">
+      <div class="icondiv">
+        <h4> <i class="bi bi-bank"></i></h4>
+  
+      </div>
+      <div>
+      <h5>Room in a rental unit</h5>
+      Your own room in a home, plus access to shared spaces.
+    </div>
+    </div>
+  
+  
+    <div class="para1">
+      <div class="icondiv">
+        <h4> <i class="bi bi-binoculars"></i></h4>
+      </div>
+    <div>
+      <h5>Room in a rental unit</h5>
+      A room with wifi that’s well suited for working.
+    </div>
+    </div>
+  
+  
+    <div class="para1">
+      <div class="icondiv">
+        <h4> <i class="bi bi-file-earmark-plus-fill"></i></h4>
+      </div>
+      <h5>Free cancellation for 48 hours.</h5>
+    </div>
+  
+  </div>
+
+
+
+
+ <!------------------------------->
+<form action="/calender" metdod="post">
+  <h3 style="margin-top: -10px;">Select Date<span class="badge bg-secondary"></span></h3>
+  <input class="selectdate" id="sltdDate" type="text"onfocus="(this.type='date')" onblur="(this.type='text')">
+</form>
+<br>
+<hr>
+
+<h3>About this place</h3>
+<p style="padding-left: 20px">Enjoy an elegant private room of 20 m2 in a renovated apartment of
+  160 m2 in the heart of <br>the city center of Nantes in the Graslin district.
+  The charm of the old renovated:<br> ceiling height of 3.60 m, period parquet, black marble fireplace, comfortable
+  bathroom.</p>
+<hr>
+
+</div><!--main card close-->
+<Div style="text-align: center ;">
+  <h5>about us</h5>
+  <p style="font-family: Arial, Helvetica, sans-serif;">Hotel websitebooking,rooom in proper placeacorind to your
+    Requirment</p>
+</Div>
+<h5 style="text-align: center">@Airbnb.com</h5>
+
+<!-----script tag -->
+<script src="./DateScript.js">
+
+</script>

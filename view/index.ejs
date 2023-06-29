@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Airbnb project</title>
+  </head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main{
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom:1px solid #dad9d9;
+    margin: auto;
+  }
+  
+.serch{
+  border: 1px solid #dad9d9;
+padding:10px;
+border-radius: 30px;
+box-shadow: 1px 1px 2px #dad9d9;
+
+}
+.form-control{
+  outline: none;
+  border: none;
+  height: fit-content;
+}
+
+.icon{
+  
+  border: 1px solid #dad9d9;
+  
+  padding:10px ;
+  margin-right: 10px;
+border-radius: 30px;
+box-shadow: 1px 1px 2px #dad9d9;
+}
+.icon:hover{
+  box-shadow: 2px 2px 2px #c0bfbf; 
+}
+#navbarNavDropdown{
+  display: flex;
+  justify-content:space-evenly;
+  text-align: center; 
+}
+
+
+.nav-item img{
+ margin-left: 10px; 
+margin-top: 20px;
+
+}
+.nav-item{
+  margin: 0 0 0 30px;
+}
+
+.nav-link{
+color: #6d6b6b;
+font-family: sans-serif;
+font-size: small;
+padding: 15px 0 0 0; 
+text-align: center;
+}
+.nav-link:hover{
+  border-bottom: 2px solid  #dad9d9;
+  scroll-behavior: smooth;
+}
+
+.maincard{
+  margin: auto;
+  padding: 20px;
+  display: grid;
+
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+margin: 20px;
+}
+.carousel-item  img{
+  border-radius: 10px;
+  height: fit-content;
+ 
+  
+
+}
+
+.card{
+  border: none;
+  outline: none;
+}
+.bi-heart{
+color: red;
+cursor: pointer;
+}
+</style>
+
+
+
+
+  <body>
+    <!--1 navbar-->
+    <nav class="navbar navbar-light  main">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../hotel image/logo.png" alt="" width="30" height="24">
+        </a>
+        <nav class="navbar navbar-light  serch">
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger " type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </nav>
+  
+        <div class="dropdown">
+          <div class="icon"> 
+           
+          <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-list"></i>
+            <img src="../hotel image/login.png" alt="awatar" width="30" height="26">
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./login.html">Login</a></li>
+            <li><a class="dropdown-item" href="./singup.html">Sign Up</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+  
+  
+    <!--2 navbar-->
+    <nav class="navbar navbar-expand-lg  main2">
+      <div class="container-fluid">
+  
+  
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <img src="../hotel image/hotel.jpg" alt="" width="30" height="24">
+              <a class="nav-link active" aria-current="page" href="">hotel</a>
+            </li>
+            <li class="nav-item">
+              <img src="../hotel image/resort.png" alt="" width="30" height="24">
+              <a class="nav-link" href="#">Resort</a>
+            </li>
+            <li class="nav-item">
+              <img src="../hotel image/boulding.png" alt="" width="30" height="24">
+              <a class="nav-link" href="#">flat</a>
+            </li>
+            
+            <li class="nav-item">
+              <img src="../hotel image/lack2.png" alt="" width="30" height="24">
+              <a class="nav-link" href="#">Lake</a>
+            </li>
+
+           
+
+            <li class="nav-item">
+              <img src="../hotel image/park.png" alt="" width="30" height="24">
+              <a class="nav-link" href="#">Park</a>
+            </li>
+
+            <li class="nav-item">
+              <img src="../hotel image/tea.png" alt="" width="30" height="24">
+              <a class="nav-link" href="#">Breckfast</a>
+            </li>
+            <li class="nav-item">
+              <img src="../hotel image/farmhouss2.png" alt="" width="30" height="24">
+              <a class="nav-link" href="#">Farmhouse</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!---images-->
+    <!--card1---------------------------------------->
+    
+    <div class="maincard">
+      <a href="./card1.html">
+      <div class="card" style="width: 18rem;">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../hotel image/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/2.webp" class="d-block w-100" alt="...">
+  
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/farmhouse2.jpg" class="d-block w-100" alt="...">
+  
+            </div>
+  
+  
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i class="bi bi-heart"></i>
+       
+           <h5>Hotel Abc,kolhapur</h5> 
+            Jaysingpur<br>
+            <h6>4000/day</h6>
+       
+      </div>
+    </a>
+
+      <!-------- card2 ---------------------------------------->
+      <div class="card" style="width: 18rem;">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../hotel image/2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i class="bi bi-heart"></i>
+       
+       
+        <h5>Hotel Akshy,Shirol</h5> 
+         Kolhapur<br>
+         <h6>10,000/day</h6>
+    
+      </div>
+    
+
+      <!-------- card3 ---------------------------------------->
+      <div class="card" style="width: 18rem;">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <img  src="../hotel image/resotr.jpg" class="d-block w-100" alt="...">
+              
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/resort3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/1.jpg" class="d-block w-100" alt="...">
+            
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i class="bi bi-heart"></i>
+        
+       
+        <h5>Hotel Navtaran,Sangli</h5> 
+        Sangli<br>
+        <h6>8000/day</h6>
+    
+      </div>
+    
+
+
+      <!-------- card4 ---------------------------------------->
+      <div class="card" style="width: 18rem;">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../hotel image/5.jpg" class="d-block w-100" alt="...">
+              
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/5.jpg" class="d-block w-100" alt="...">
+              
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/5.jpg" class="d-block w-100" alt="...">
+             
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+        <i class="bi bi-heart"></i>
+        
+       
+        <h5>Hotel Navtaran,Sangli</h5> 
+        Sangli<br>
+        <h6>8000/day</h6>
+    
+      </div>
+
+
+
+
+
+ <!-------- card5---------------------------------------->
+
+      <div class="card" style="width: 18rem;">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../hotel image/2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../hotel image/resort3.jpg" class="d-block w-100" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <i class="bi bi-heart"></i>
+        
+       
+        <h5>Hotel Navtaran,Sangli</h5> 
+        Satara<br>
+        <h6>12,00/day</h6>
+        </div>
+     
+<!-------- card5---------------------------------------->
+
+<div class="card" style="width: 18rem;">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="../hotel image/resort3.jpg" class="d-block w-100" alt="...">
+       
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../hotel image/2.webp" class="d-block w-100" alt="...">
+       
+      </div>
+      <div class="carousel-item">
+        <img src="../hotel image/resort3.jpg" class="d-block w-100" alt="...">
+       
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <i class="bi bi-heart"></i>
+  
+ 
+  <h5>Hotel Navtaran,Sangli</h5> 
+  Satara<br>
+  <h6>5000/day</h6>
+  
+</div>
+   
+
+</div>
+
+
+  
+    </div><!--main card close-->
+   <Div style="text-align: center ;">
+    <h5>about us</h5>
+    <p style="font-family: Arial, Helvetica, sans-serif;">Hotel websitebooking,rooom in proper placeacorind to your Requirment</p>
+   </Div>
+  <h5 style="text-align: center">@Airbnb.com</h5>
+  
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  
+  
+  </body>
+  
+  </html>
